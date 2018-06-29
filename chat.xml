@@ -17,7 +17,8 @@
       </input>
     </context>
   </input>
-
+ <input pattern="(lugar) *">
+    <output value="Hola no sabes donde ir" />
  <context if="empty($lugar)">
     <output value="te gusta la playa o la joda?"/>
 
