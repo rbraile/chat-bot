@@ -1,4 +1,5 @@
 <context>
+  <output value="Hola no sabes a donde ir" />
   <input pattern="(hello|hi|hola) *">
     <output value="Hello $UserName!" if="full($UserName)"/>
 
