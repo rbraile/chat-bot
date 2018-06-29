@@ -12,11 +12,18 @@
 
       <input pattern="(solo)">
         <var name="tipo" value="solo" scope="user"/>
-        <output value="osea  que buscas un lugar para ir $tipo"/>
+        <output value="osea  que buscas un lugar para ir $tipo" />
+
+        <context if="empty($lugar)">
+          <output value="te gusta la playa o la joda?"/>
+
+          <input pattern="(fiesta)">
+            <var name="lugar" value="fiesta" scope="user"/>
+            <output value="osea que te gusta la $lugar"/>
+          </input>
+        </context>
+
       </input>
     </context>
-    <input>
-      <output value="te gusta la playa o la montaña" />
-    </input>
   </input>
 </context>
