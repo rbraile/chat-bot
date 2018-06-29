@@ -14,7 +14,9 @@
         <var name="tipo" value="solo" scope="user"/>
         <output value="osea  que buscas un lugar para ir $tipo"/>
       </input>
-
     </context>
+    <input>
+      <output value="te gusta la playa o la montaña" />
+    </input>
   </input>
 </context>
